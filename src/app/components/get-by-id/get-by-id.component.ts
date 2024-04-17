@@ -26,10 +26,7 @@ export class GetByIdComponent implements OnInit {
     this.getById();
   }
 
-
-
   getById(){
-
     this.http.getById(this.myId).subscribe({
       next: (data) => {
         this.user = data;
@@ -39,9 +36,5 @@ export class GetByIdComponent implements OnInit {
         console.log(err);
       }
     })
-
   }
-
-
-
 }
